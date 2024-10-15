@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 3em;
+    margin: 0;
+}
+
+.filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.filme {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+.filme img {
+    width: 100%;
+    height: auto;
+}
+
+.informacoes {
+    padding: 10px;
+}
+
+.informacoes h2 {
+    font-size: 1.5em;
+    color: white;
+    margin: 0;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
