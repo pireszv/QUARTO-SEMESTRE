@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" media="all">
+    <title>Média aritimética das notas</title>
+    <script>
+        function mediaNotas() {
+            const nota1 = parseInt(document.getElementById("nota1").value);
+            const nota2 = parseInt(document.getElementById("nota2").value);
+            const nota3 = parseInt(document.getElementById("nota3").value);
+
+            const mediaNotas = (nota1 + nota2 + nota3)/3
+
+            document.getElementById("resultado").innerHTML = `
+                <p>A média aritimética entre as 3 notas é: ${mediaNotas}.</p>
+            `;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Média aritimética das notas</h1>
+    <form onsubmit="event.preventDefault(); mediaNotas();">
+        <label for="nota1">Primeira nota:</label>
+        <input type="number" id="nota1" required>
+        <br><br>
+        <label for="nota2">Segunda nota:</label>
+        <input type="number" id="nota2" required>
+        <br><br>
+        <label for="nota3">Terceira nota:</label>
+        <input type="number" id="nota3" required>
+        <br><br>
+        <button type="submit">Calcular Idade</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>

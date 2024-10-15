@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" media="all">
+    <title>Calcular esfera</title>
+    <script>
+        function calcularEsfera() {
+            const raio = parseInt(document.getElementById("raio").value);
+            const pi = Math.PI;
+
+            const comprimentoEsfera = 2 * pi * raio;
+            const areaEsfera = 4 * pi * Math.pow(raio, 2);
+            const volumeEsfera = (4/3) * pi * Math.pow(raio, 3);
+
+            document.getElementById("resultado").innerHTML = `
+                <p>Comprimento: ${comprimentoEsfera}.</p>
+                <p>Area: ${areaEsfera}.</p>
+                <p>Volume: ${volumeEsfera}.</p>
+
+            `;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Calcular esfera:</h1>
+    <form onsubmit="event.preventDefault(); calcularEsfera();">
+        <label for="raio">Informe o raio:</label>
+        <input type="number" id="raio" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>

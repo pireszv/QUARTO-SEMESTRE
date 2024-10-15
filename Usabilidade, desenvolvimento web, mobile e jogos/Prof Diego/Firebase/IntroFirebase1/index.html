@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="notify"></div>
+    <div class="form">
+        <input type="text" id="name" placeholder="Coloque o nome" autocomplete="off">
+        <input type="email" id="email" placeholder="Digite o email" autocomplete="off">
+        <button id="add_Data" class="add_Data">Cadastrar</button>
+        <button id="update_data" class="update_data hide">Atualizar</button>
+    </div>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados serão adicionados aqui pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
