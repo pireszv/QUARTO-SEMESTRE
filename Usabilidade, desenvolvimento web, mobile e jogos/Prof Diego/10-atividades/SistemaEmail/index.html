@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .formulario {
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        .campo {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .botao {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <h2>Formulário</h2>
+        <input type="text" class="campo" id="login" placeholder="Login">
+        <input type="email" class="campo" id="email" placeholder="Email">
+        <input type="password" class="campo" id="senha" placeholder="Senha">
+        <input type="password" class="campo" id="confirmarSenha" placeholder="Confirmar Senha">
+        <input type="text" class="campo" id="dataNascimento" placeholder="Data de Nascimento (dd/mm/aaaa)">
+        <select class="campo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <button class="botao" onclick="limparFormulario()">Limpar</button>
+        <button class="botao" onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <script>
+        function limparFormulario() {
+            document.getElementById('login').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('senha').value = '';
+            document.getElementById('confirmarSenha').value = '';
+            document.getElementById('dataNascimento').value = '';
+            document.getElementById('sexo').value = 'masculino';
+        }
+
+        function cadastrar() {
+            let login = document.getElementById('login').value;
+            let email = document.getElementById('email').value;
+            let senha = document.getElementById('senha').value;
+            let confirmarSenha = document.getElementById('confirmarSenha').value;
+            let dataNascimento = document.getElementById('dataNascimento').value;
+            let sexo = document.getElementById('sexo').value;
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            alert('Cadastro realizado com sucesso!');
+        }
+    </script>
+</body>
+</html>

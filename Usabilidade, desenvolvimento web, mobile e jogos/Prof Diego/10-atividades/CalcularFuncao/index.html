@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Função</title>
+</head>
+<body>
+  <input type="number" id="valorX" placeholder="Digite o valor de x">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcular() {
+      const x = parseFloat(document.getElementById('valorX').value);
+
+      const resultado = calcularValorFuncao(x);
+
+      document.getElementById('resultado').textContent = `O valor da função para x = ${x} é: ${resultado}`;
+    }
+  </script>
+</body>
+</html>

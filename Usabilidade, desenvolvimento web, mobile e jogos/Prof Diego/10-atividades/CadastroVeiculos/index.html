@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Veículos</h1>
+        <form id="veiculoForm">
+            <label for="chassi">Número do Chassi:</label>
+            <input type="text" id="chassi" required>
+
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required>
+
+            <button type="submit">Cadastrar Veículo</button>
+        </form>
+
+        <div id="veiculosCadastrados">
+            <h2>Veículos Cadastrados</h2>
+            <ul id="listaVeiculos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
