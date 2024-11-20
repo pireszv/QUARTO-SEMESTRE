@@ -1,0 +1,26 @@
+.home-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.botao_criar_ong {
+    border: none;
+    border-radius: 999px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(112, 112, 255);
+    box-shadow: 0 0 10px rgb(3, 31, 139);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao_criar_ong:hover {
+    background-color: rgb(80, 80, 255);
+    font-size: 1.1em;
+}
+
+.botao_criar_ong:active {
+    background-color: rgb(112, 112, 255);
+    font-size: 16px;
+}

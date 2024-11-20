@@ -1,0 +1,35 @@
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    position: relative;
+}
+
+.botao_criar_ong {
+    border: none;
+    border-radius: 999px;
+    display: block;
+    height: 60px;
+    width: 200px;
+    background-color: rgb(112, 112, 255);
+    box-shadow: 0 0 10px rgb(3, 31, 139);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+}
+
+.botao_criar_ong:hover {
+    background-color: rgb(80, 80, 255);
+    font-size: 1.1em;
+}
+
+.botao_criar_ong:active {
+    background-color: rgb(112, 112, 255);
+    font-size: 18px;
+}
